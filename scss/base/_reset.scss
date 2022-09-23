@@ -1,3 +1,15 @@
 body{
   font-family: $font-Roboto;
+  background: #f2f1f6;
+}
+#app{
+  &:before{
+    //content: '';
+    //min-height: 185px;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //right: 0;
+    //background: #326e51;
+  }
 }

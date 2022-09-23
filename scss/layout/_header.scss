@@ -126,8 +126,20 @@
 
         }
         &--send{
-          background-color: #{$secondary-color};
-          border-color: #{$secondary-color};
+          background-color: #{$secondary-color} !important;
+          border-color: #{$secondary-color} !important;
+          color: #ffffff !important;
+          &:hover{
+            opacity: .91;
+          }
+        }
+        &--submit{
+          background-color: #{$primary-color} !important;
+          border-color: #{$primary-color} !important;
+          color: #ffffff !important;
+          &:hover{
+            opacity: .91;
+          }
         }
       }
       &__txt{

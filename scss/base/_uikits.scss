@@ -3,6 +3,19 @@
     max-width: 1320px;
   }
   &-modal{
+    @extend .uk__overlay;
+  }
+  &__overlay{
     background: rgba(#0b0b0b,0.8);
+  }
+  &-offcanvas{
+    &-overlay{
+      &:before{
+        @extend .uk__overlay;
+      }
+    }
+    &-bar{
+      background: #ffffff;
+    }
   }
 }

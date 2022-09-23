@@ -32,7 +32,7 @@
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <div class="uk-navbar-left">
                         <div class="uk-navbar-item">
-                            <a href="" class="header__pc__btnMenu">
+                            <a href="#offcanvas-overlay-menupc" uk-toggle class="header__pc__btnMenu">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -156,7 +156,7 @@
         </div>
     </header>
 
-    <div class="uk-visible@m top_bar_hasaki">
+    <div class="uk-visible@m top_bar_hasaki uk-position-z-index uk-position-relative">
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
@@ -185,6 +185,19 @@
                 </div>
 
             </nav>
+        </div>
+    </div>
+
+    <div id="offcanvas-overlay-menupc" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+
+            <h3>Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
         </div>
     </div>
 
@@ -240,7 +253,7 @@
                             </div>
 
                             <div class="uk-margin-small">
-                                <button type="submit" class="header__pc__boxLogin__btnLogin uk-width-1-1 uk-button uk-button-default">Đăng nhập</button>
+                                <button type="submit" class="header__pc__boxLogin__btnLogin header__pc__boxLogin__btnLogin--submit uk-width-1-1 uk-button uk-button-default">Đăng nhập</button>
                             </div>
 
                             <div class="uk-margin-small-top">
@@ -440,7 +453,7 @@
                             </div>
 
                             <div class="uk-margin-small-top">
-                                <button type="submit" class="header__pc__boxLogin__btnLogin uk-width-1-1 uk-button uk-button-default">Đăng ký</button>
+                                <button type="submit" class="header__pc__boxLogin__btnLogin header__pc__boxLogin__btnLogin--submit uk-width-1-1 uk-button uk-button-default">Đăng ký</button>
                             </div>
                         </fieldset>
                     </form>

@@ -4,7 +4,7 @@
   background-size: auto 50px;
 }
 .header{
-  background: #326e51;
+  background: #{$primary-color};
   &__pc{
     .uk-logo{
       img{
@@ -13,6 +13,67 @@
     }
     .uk-navbar-left{
       gap: 20px;
+    }
+    &__boxLogin{
+      &:before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+
+        border-bottom: 5px solid #ffffff;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      $x:20px;
+      padding: 15px #{$x};
+      &__item{
+        &:nth-child(n+2){
+          $y:15px;
+          margin-top: #{$y};
+          padding-top: #{$y};
+          position: relative;
+          &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            border-bottom: 1px solid #dbdbdb;
+            left: calc(0px - #{$x});
+            right: calc(0px - #{$x});
+            display: block;
+          }
+        }
+      }
+      &__btnLogin{
+        background-color: #{$primary-color};
+        border-color: #{$primary-color};
+        color: #ffffff;
+        text-transform: inherit;
+        @extend .fz-15;
+        font-family: $font-Roboto-Bold;
+        border-radius: 3px;
+        &:hover{
+
+        }
+        &--send{
+          background-color: #{$secondary-color};
+          border-color: #{$secondary-color};
+        }
+      }
+      &__txt{
+        color: #333333;
+        @extend .fz-13;
+        line-height: 1.4;
+        a{
+          color: #{$primary-color};
+        }
+        &--title{
+          @extend .fz-15;
+        }
+      }
     }
     &__txt{
       @extend .fz-13;
@@ -46,14 +107,14 @@
         font-weight: 700;
         height: 17px;
         line-height: 17px;
-        background: #ff6600;
+        background: #{$secondary-color};
         color: #fff;
       }
     }
     &__btnMenu{
       color: #ffffff;
       padding: 7px 7px;
-      border: 1px solid #326e51;
+      border: 1px solid #{$primary-color};
       border-radius: 4px;
       width: 38px;
       display: inline-block;
@@ -93,8 +154,8 @@
       }
       &__btnSubmit{
         position: relative;
-        background-color: #ff6600 !important;
-        border-color: #ff6600 !important;
+        background-color: #{$secondary-color} !important;
+        border-color: #{$secondary-color} !important;
         $x:4px;
         border-radius: 0 #{$x} #{$x} 0;
         padding: 0 20px;

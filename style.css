@@ -772,30 +772,30 @@ body {
   margin-top: 50px;
 }
 
-.fz-12, .header__pc__boxSearch__input, .header__pc__txtSearch > * {
+.fz-12, .header__pc__boxSearch__input, .header__pc__txtSearch > *, .top_bar_hasaki__btn {
   font-size: 12px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-12, .header__pc__boxSearch__input, .header__pc__txtSearch > * {
+  .fz-12, .header__pc__boxSearch__input, .header__pc__txtSearch > *, .top_bar_hasaki__btn {
     font-size: calc(12px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-12, .header__pc__boxSearch__input, .header__pc__txtSearch > * {
+  .fz-12, .header__pc__boxSearch__input, .header__pc__txtSearch > *, .top_bar_hasaki__btn {
     font-size: 12px !important;
   }
 }
 
-.fz-13, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
+.fz-13, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
   font-size: 13px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-13, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
+  .fz-13, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
     font-size: calc(13px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-13, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
+  .fz-13, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
     font-size: 13px !important;
   }
 }
@@ -878,6 +878,14 @@ body {
 }
 .modal__acc__body {
   padding: 15px 20px;
+}
+@media (min-width: 960px) {
+  .modal__acc__close {
+    transform: translate(50%, -50%);
+    background: #666;
+    width: 36px;
+    height: 36px;
+  }
 }
 .modal__acc__btnOtp {
   text-transform: inherit;
@@ -1036,6 +1044,59 @@ body {
   background-color: #b1ffdb;
   height: 50px;
   background-size: auto 50px;
+}
+
+.top_bar_hasaki {
+  background: #e5fbf1;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.top_bar_hasaki__navitem, .top_bar_hasaki .uk-navbar-nav > li > a, .top_bar_hasaki .uk-navbar-item {
+  min-height: 37px;
+}
+.top_bar_hasaki .uk-navbar-nav {
+  gap: 10px;
+}
+.top_bar_hasaki .uk-navbar-nav > li > a {
+  color: #326e51;
+}
+.top_bar_hasaki .uk-navbar-left {
+  gap: 15px;
+}
+.top_bar_hasaki .uk-navbar-right {
+  gap: 5px;
+}
+.top_bar_hasaki__btn {
+  text-transform: inherit;
+  color: #326e51 !important;
+  border-color: #326e51 !important;
+  line-height: calc(21px - 2px);
+  padding: 0 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.top_bar_hasaki__btn:before {
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-flex;
+  margin-right: 6px;
+}
+.top_bar_hasaki__btn--taiapp:before {
+  background-image: url("images/hsk/icon_phone.png");
+  width: 7px;
+  height: 13px;
+}
+.top_bar_hasaki__btn--tracuu:before {
+  width: 13px;
+  height: 13px;
+  background-image: url("images/hsk/icon_tracuudh.svg");
+}
+.top_bar_hasaki__btn--maps:before {
+  width: 9px;
+  height: 11px;
+  background-image: url("images/hsk/icon_maker_green.svg");
 }
 
 .header {

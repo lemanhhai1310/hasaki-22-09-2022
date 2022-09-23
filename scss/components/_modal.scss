@@ -14,7 +14,12 @@
       padding: 15px #{$x};
     }
     &__close{
-
+      @include media-breakpoint-up('m'){
+        transform: translate(50%,-50%);
+        background: #666;
+        width: 36px;
+        height: 36px;
+      }
     }
     &__btnOtp{
       text-transform: inherit;

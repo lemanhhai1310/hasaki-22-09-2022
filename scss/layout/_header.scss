@@ -3,6 +3,73 @@
   height: 50px;
   background-size: auto 50px;
 }
+.top_bar_hasaki{
+  background: #e5fbf1;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+  &__navitem{
+    min-height: 37px;
+  }
+  .uk-navbar-item{
+    @extend .top_bar_hasaki__navitem;
+  }
+  .uk-navbar-nav{
+    gap: 10px;
+    >li{
+      >a{
+        @extend .top_bar_hasaki__navitem;
+        @extend .fz-13;
+        color: #{$primary-color};
+      }
+    }
+  }
+  .uk-navbar-left{
+    gap: 15px;
+  }
+  .uk-navbar-right{
+    gap: 5px;
+  }
+  &__btn{
+    text-transform: inherit;
+    color: #{$primary-color} !important;
+    border-color: #{$primary-color} !important;
+    @extend .fz-12;
+    $x:21px;
+    line-height: calc(#{$x} - 2px);
+    padding: 0 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    &:before{
+      content: "";
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-flex;
+      margin-right: 6px;
+    }
+    &--taiapp{
+      &:before{
+        background-image: url("images/hsk/icon_phone.png");
+        width: 7px;
+        height: 13px;
+      }
+    }
+    &--tracuu{
+      &:before{
+        width: 13px;
+        height: 13px;
+        background-image: url("images/hsk/icon_tracuudh.svg");
+      }
+    }
+    &--maps{
+      &:before{
+        width: 9px;
+        height: 11px;
+        background-image: url("images/hsk/icon_maker_green.svg");
+      }
+    }
+  }
+}
 .header{
   background: #{$primary-color};
   &__pc{

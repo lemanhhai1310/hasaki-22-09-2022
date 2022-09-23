@@ -156,6 +156,38 @@
         </div>
     </header>
 
+    <div class="uk-visible@m top_bar_hasaki">
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item">
+                        <a href="" class="top_bar_hasaki__btn top_bar_hasaki__btn--maps uk-button uk-button-default uk-button-small">Phường 8, Quận 10, TP Hồ Chí Minh</a>
+                    </div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">HASAKI DEALS</a></li>
+                        <li><a href="#">HOT DEALS</a></li>
+                        <li><a href="#">THƯƠNG HIỆU</a></li>
+                        <li><a href="#">HÀNG MỚI VỀ</a></li>
+                        <li><a href="#">BÁN CHẠY</a></li>
+                        <li><a href="#">CLINIC & SPA</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item">
+                        <a href="" class="top_bar_hasaki__btn top_bar_hasaki__btn--taiapp uk-button uk-button-default uk-button-small">Tải ứng dụng</a>
+                    </div>
+                    <div class="uk-navbar-item">
+                        <a href="" class="top_bar_hasaki__btn top_bar_hasaki__btn--tracuu uk-button uk-button-default uk-button-small">Tra cứu đơn hàng</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
     <!--Modal login-->
     <div id="modal-close-outside-login" class="modal__acc" uk-modal>
         <div class="uk-modal-dialog uk-modal-body modal__acc__body modal__acc__dialog">
@@ -268,7 +300,7 @@
                                 <label class="header__pc__boxLogin__txt"><input class="uk-radio modal__acc__radio" type="radio" name="radio2"> Nữ</label>
                             </div>
 
-                            <div class="uk-margin-small uk-grid uk-child-width-1-3@m uk-grid-10">
+                            <div class="uk-margin-small uk-grid uk-child-width-1-3 uk-grid-10">
                                 <div>
                                     <select class="uk-select modal__acc__select uk-form-small">
                                         <option value="">Ngày</option>
@@ -420,10 +452,10 @@
                         <div class="uk-form-controls">
                             <div class="uk-child-width-1-2 uk-grid-10 uk-grid-match" uk-grid>
                                 <div>
-                                    <a href="javascript:void(0)"><img class="uk-width-1-1@m uk-responsive-height" src="images/hsk/img_login_fb_2.jpeg" alt=""></a>
+                                    <a href="javascript:void(0)"><img class="uk-width-1-1@m uk-responsive-height uk-responsive-width" src="images/hsk/img_login_fb_2.jpeg" alt=""></a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)"><img class="uk-width-1-1@m uk-responsive-height" src="images/hsk/img_login_gg_2.jpeg" alt=""></a>
+                                    <a href="javascript:void(0)"><img class="uk-width-1-1@m uk-responsive-height uk-responsive-width" src="images/hsk/img_login_gg_2.jpeg" alt=""></a>
                                 </div>
                             </div>
                         </div>

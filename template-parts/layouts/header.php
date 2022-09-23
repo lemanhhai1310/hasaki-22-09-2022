@@ -243,7 +243,8 @@
 
                             <div class="uk-margin-small">
                                 <div class="uk-position-relative">
-                                    <input class="uk-input modal__acc__input uk-form-small" type="text" placeholder="Nhập mã xác thực 6 số">
+                                    <input class="uk-input modal__acc__input modal__acc__input--code uk-form-small" type="text" placeholder="Nhập mã xác thực 6 số">
+                                    <button class="modal__acc__btnOtp uk-button uk-button-secondary uk-button-small uk-position-right">Lấy mã</button>
                                 </div>
                             </div>
 
@@ -471,5 +472,5 @@
     <!--/Modal forgot password-->
 
     <script>
-        // UIkit.modal('#modal-close-outside-login').show();
+        // UIkit.modal('#modal-close-outside-register').show();
     </script>

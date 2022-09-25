@@ -106,4 +106,40 @@
         </div>
     </div>
 </div>
+<div class="content_mobile uk-section-xsmall uk-position-relative uk-hidden@m uk-height-viewport-2">
+    <div class="uk-position-top content_mobile__bg"></div>
+    <div class="uk-position-relative uk-position-z-index">
+        <div class="uk-container">
+            <div class="content_mobile__boxslider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;max-height: 148">
+
+                <ul class="uk-slideshow-items">
+                    <?php
+                    $data = array(
+                        '1663757012image_2022_09_21t03_31_53_411z.png',
+                        '1662348045web.jpeg',
+                        '1663328252home---254.jpeg',
+                        '1663578894homecogia.jpeg',
+                        '1663583493home---260d.jpeg',
+                        '1663843668home---265.jpeg',
+                        '1663843954home---266.jpeg',
+                        '1663843985homecogia-(1)-(1).jpeg',
+                        '1663903262bb_hasaki-846x250_thang-9.jpeg',
+                        '1663235860864x250.jpeg',
+                    );
+                    foreach ($data as $k=>$v): ?>
+                        <li>
+                            <img src="images/hsk/slider/<?= $v ?>" alt="" uk-cover="">
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <a class="uk-position-center-left home__bannerpc__slidenav home__bannerpc__slidenav--prev uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right home__bannerpc__slidenav home__bannerpc__slidenav--next uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                <ul class="home__bannerpc__dotnav uk-slideshow-nav uk-dotnav uk-position-bottom-center uk-position-small"></ul>
+
+            </div>
+        </div>
+    </div>
+</div>
 <?php require "template-parts/layouts/footer.php"; ?>

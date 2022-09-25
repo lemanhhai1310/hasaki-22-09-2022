@@ -55,3 +55,16 @@
     }
   }
 }
+.content_mobile{
+  padding-top: 13px;
+  background: #f1f1f5;
+  &__bg{
+    min-height: 94px;
+    background-color: #{$primary-color};
+  }
+  &__boxslider{
+    .uk-slideshow-items{
+      border-radius: 10px;
+    }
+  }
+}

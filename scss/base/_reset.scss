@@ -1,6 +1,9 @@
 body{
   font-family: $font-Roboto;
-  background: #f2f1f6;
+  background: #{$primary-color};
+  @include media-breakpoint-up('m'){
+    background: #f2f1f6;
+  }
 }
 #app{
   &:before{

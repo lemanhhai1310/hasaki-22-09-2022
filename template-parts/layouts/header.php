@@ -152,7 +152,37 @@
             </div>
         </div>
         <div class="uk-hidden@m header__mobile">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle header__mobile__menu" href="#offcanvas-overlay-menumobile" uk-toggle aria-label="Open Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+
+                <div class="uk-navbar-center">
+                    <a href="" class="uk-navbar-item uk-logo"><img style="height: 35px" src="images/hsk/new_logo_500x114.svg" alt=""></a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <a href="" class="uk-navbar-item header__mobile__cart">
+                        <div class="uk-position-relative">
+                            <img style="width: 25px" src="images/graphics/cart_top.svg" alt="">
+                            <span class="uk-position-top-right header__mobile__cart__count">1</span>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+            <div class="header__mobile__search">
+                <div class="uk-container">
+                    <form class="uk-search uk-search-default uk-width-1-1">
+                        <span uk-search-icon></span>
+                        <input class="uk-search-input" type="search" placeholder="Tìm sản phẩm, thương hiệu bạn mong muốn...">
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -185,6 +215,19 @@
                 </div>
 
             </nav>
+        </div>
+    </div>
+
+    <div id="offcanvas-overlay-menumobile" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+
+            <h3>Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
         </div>
     </div>
 

@@ -1,6 +1,16 @@
 .uk{
   &-container{
     max-width: 1320px;
+    padding-left: #{$space};
+    padding-right: #{$space};
+    @include media-breakpoint-up('s'){
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include media-breakpoint-up('m'){
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
   &-modal{
     @extend .uk__overlay;

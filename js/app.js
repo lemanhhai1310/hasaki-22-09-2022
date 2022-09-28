@@ -17,3 +17,15 @@ var placeholderText = [
 window.addEventListener("load", ()=>{
     $('#search').placeholderTypewriter({text: placeholderText});
 });
+
+$(window).on("load", function (e) {
+    UIkit.util.on('.header__pc__boxLogin', 'show', function () {
+        // do something
+        $('.mask_menu').fadeIn(300);
+    });
+
+    UIkit.util.on('.header__pc__boxLogin', 'hide', function () {
+        // do something
+        $('.mask_menu').stop(true, true).fadeOut(300);
+    });
+});

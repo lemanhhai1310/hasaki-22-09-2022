@@ -18,6 +18,11 @@
   &__overlay{
     background: rgba(#0b0b0b,0.8);
   }
+  &-overlay{
+    &-primary{
+      @extend .uk__overlay;
+    }
+  }
   &-offcanvas{
     &-overlay{
       &:before{

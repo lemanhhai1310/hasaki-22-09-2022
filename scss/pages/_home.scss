@@ -67,4 +67,14 @@
       border-radius: 10px;
     }
   }
+  &__category{
+    &__txt{
+      @extend .fz-13;
+      color: #333333;
+      line-height: 1.2;
+    }
+    &__img{
+      height: 45px;
+    }
+  }
 }

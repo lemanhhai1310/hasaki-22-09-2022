@@ -65,7 +65,7 @@
 
                     <div class="uk-navbar-right">
                         <div class="uk-navbar-item">
-                            <div class="uk-position-relative">
+                            <div class="uk-position-relative" id="box_acc">
                                 <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
                                     <div>
                                         <img src="images/hsk/icon_header_2.svg" alt="">
@@ -217,6 +217,8 @@
             </nav>
         </div>
     </div>
+
+    <div class="uk-overlay-primary mask_menu"></div>
 
     <div id="offcanvas-overlay-menumobile" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar">

@@ -106,11 +106,13 @@
         </div>
     </div>
 </div>
+
+<!--Content mobile-->
 <div class="content_mobile uk-section-xsmall uk-position-relative uk-hidden@m uk-height-viewport-2">
     <div class="uk-position-top content_mobile__bg"></div>
     <div class="uk-position-relative uk-position-z-index">
         <div class="uk-container">
-            <div class="content_mobile__boxslider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;max-height: 148">
+            <div class="uk-margin content_mobile__boxslider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;max-height: 148">
 
                 <ul class="uk-slideshow-items">
                     <?php
@@ -139,7 +141,69 @@
                 <ul class="home__bannerpc__dotnav uk-slideshow-nav uk-dotnav uk-position-bottom-center uk-position-small"></ul>
 
             </div>
+
+            <!--Category-->
+            <div class="uk-margin-top">
+                <div class="uk-child-width-1-5 uk-grid-match uk-grid-10" uk-grid>
+                    <?php
+                    $data = array(
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/menu-category.png',
+                            'txt' => 'Danh mục',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/menu-deals.png',
+                            'txt' => 'Deals',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/now-free-mobile.gif',
+                            'txt' => 'Giao 2H',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/menu-spa.png',
+                            'txt' => 'Clinic & S.P.A',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/menu-spa-services.png',
+                            'txt' => 'Bảng giá',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/track-order-70.png',
+                            'txt' => 'Tra cứu đơn hàng',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/icon-covid.png',
+                            'txt' => 'Covid',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/menu-bestseller.png',
+                            'txt' => 'Bán chạy',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/menu-booking.png',
+                            'txt' => 'Đặt hẹn',
+                        ),
+                        array(
+                            'icon' => 'images/hsk/icon/mobile/menu-blog.png',
+                            'txt' => 'Cẩm nang',
+                        ),
+                    );
+                    foreach ($data as $k=>$v): ?>
+                    <div>
+                        <div class="uk-position-relative uk-text-center">
+                            <div class="item__5">
+                                <img class="content_mobile__category__img" src="<?= $v['icon'] ?>" alt="">
+                            </div>
+                            <div class="item__5 content_mobile__category__txt"><?= $v['txt'] ?></div>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <!--/Category-->
         </div>
     </div>
 </div>
+<!--/Content mobile-->
 <?php require "template-parts/layouts/footer.php"; ?>

@@ -72,6 +72,7 @@
 }
 .header{
   background: #{$primary-color};
+  z-index: 982;
   &__pc{
     .uk-logo{
       img{
@@ -315,4 +316,13 @@
       }
     }
   }
+}
+.mask_menu{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 981;
+  left: 0;
+  top: 0;
+  display: none;
 }

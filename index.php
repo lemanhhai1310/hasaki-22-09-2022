@@ -1,6 +1,8 @@
 <?php $data["title"] = "Hasaki.vn | Mỹ Phẩm & Clinic"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<?php require "template-parts/layouts/data.php"; ?>
+<!--Home banner-->
 <div class="home__bannerpc uk-visible@m uk-background-default">
     <div class="uk-container">
         <div class="uk-grid-match uk-grid-5" uk-grid>
@@ -106,6 +108,73 @@
         </div>
     </div>
 </div>
+<!--/Home banner-->
+
+<!--Content PC-->
+<div class="uk-section-xsmall uk-visible@m">
+    <div class="uk-container">
+        <div class="uk-margin home__block__flashsale">
+            <div class="home__block__flashsale__header">
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">
+                        <div class="uk-child-width-auto uk-grid-20 uk-flex-middle" uk-grid>
+                            <div class="home__block__flashsale__header__column">
+                                <h2 class="uk-h2 home__block__flashsale__header__title">Deals đang diễn ra</h2>
+                            </div>
+                            <div class="home__block__flashsale__header__column">
+                                <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
+                                    <div>
+                                        <div class="home__block__flashsale__header__txt">kết thúc trong</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-grid-5 uk-child-width-auto uk-flex-middle" uk-grid uk-countdown="date: 2022-11-05T13:11:36+00:00">
+                                            <div>
+                                                <div class="home__block__flashsale__header__countdown__number uk-countdown-number uk-countdown-days"></div>
+                                            </div>
+                                            <div class="home__block__flashsale__header__countdown__separator uk-countdown-separator">:</div>
+                                            <div>
+                                                <div class="home__block__flashsale__header__countdown__number uk-countdown-number uk-countdown-hours"></div>
+                                            </div>
+                                            <div class="home__block__flashsale__header__countdown__separator uk-countdown-separator">:</div>
+                                            <div>
+                                                <div class="home__block__flashsale__header__countdown__number uk-countdown-number uk-countdown-minutes"></div>
+                                            </div>
+                                            <div class="home__block__flashsale__header__countdown__separator uk-countdown-separator">:</div>
+                                            <div>
+                                                <div class="home__block__flashsale__header__countdown__number uk-countdown-number uk-countdown-seconds"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-auto">
+                        <a href="" class="home__block__flashsale__header__btnViewall uk-button uk-button-default">Xem tất cả</a>
+                    </div>
+                </div>
+            </div>
+            <div id="slideshow1" class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l">
+                    <?php foreach ($products as $product): ?>
+                    <li class="product__li">
+                        <?php require "template-parts/layouts/product.php"; ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <a class="uk-position-center-left home__bannerpc__slidenav home__bannerpc__slidenav--prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right home__bannerpc__slidenav home__bannerpc__slidenav--next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+            </div>
+        </div>
+        <div class="uk-margin-top">
+
+        </div>
+    </div>
+</div>
+<!--/Content PC-->
 
 <!--Content mobile-->
 <div class="content_mobile uk-section-xsmall uk-position-relative uk-hidden@m uk-height-viewport-2">

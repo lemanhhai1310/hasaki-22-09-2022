@@ -89,4 +89,10 @@
       margin-top: #{$x}px;
     }
   }
+  $x:3;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
 }

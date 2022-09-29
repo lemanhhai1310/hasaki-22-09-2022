@@ -1,0 +1,136 @@
+@keyframes progress_bar_fill{
+  from{background-position:0 0}
+  to{background-position:40px 0}
+}
+.product{
+  &__li{
+
+  }
+  &__countdown{
+    @extend .fz-11;
+    color: #ffffff;
+    padding-left: 10px;
+    >*{
+      @extend .fz-11;
+      color: #ffffff;
+    }
+  }
+  &__boxProcess{
+    height: 16px;
+    background: #ffaf7e;
+    &__fill{
+      background-size: 40px 40px;
+      background-color: #ff6600;
+      background-image: linear-gradient(45deg, rgba(255,255,255,.25) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.25) 50%, rgba(255,255,255,.25) 75%, transparent 75%,transparent );
+      animation: progress_bar_fill 2s linear infinite;
+    }
+  }
+  &__percent_deal{
+    color: #ff6600;
+    @extend .fz-13;
+  }
+  &__gift{
+    color: #ff6600;
+    @extend .fz-11;
+    max-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px dashed #ff6600;
+    padding: 0px 10px;
+    font-family: $font-Roboto-Bold;
+  }
+  &__line{
+    position: relative;
+    &:before{
+      content: "";
+      left: 7px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 10px;
+      display: block;
+      background: #777;
+    }
+  }
+  &__star{
+    width: 64px;
+    height: 11px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    &__txt{
+      color: #777;
+      @extend .fz-11;
+    }
+    &__numberStart{
+      position: absolute;
+      left: 0;
+      top: 1px;
+      height: 11px;
+      background-repeat: no-repeat;
+      background-position-x: 0;
+      background-position-y: -11px;
+    }
+    &__startBackground{
+      width: 100%;
+      height: 11px;
+      background-repeat: no-repeat;
+    }
+  }
+  &__cartNumber{
+    color: #777;
+    @extend .fz-11;
+    padding-left: 14px;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  &__item{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-right: 1px solid #eaeaea;
+    &:hover{
+      border-color: #ff6600;
+    }
+  }
+  &__name{
+    @extend .fz-13;
+    color: rgb(51,51,51);
+    line-height: 16px;
+    max-height: 16px;
+    overflow: hidden;
+  }
+  &__brand{
+    color: #326e51;
+    @extend .fz-13;
+    font-family: $font-Roboto-Bold;
+    line-height: (18/13);
+    margin: 0;
+  }
+  &__price{
+    @extend .fz-16;
+    color: #ff6600;
+    font-family: $font-Roboto-Bold;
+    line-height: (20/16);
+  }
+  &__priceold{
+    @extend .fz-12;
+    color: #666;
+    line-height: (20/12);
+  }
+  &__percent{
+    background: #ff5501;
+    padding: 0px 5px;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    @extend .fz-13;
+  }
+  &__box1{
+    padding: 10px;
+  }
+  &__box2{
+    padding: 5px 10px;
+  }
+}

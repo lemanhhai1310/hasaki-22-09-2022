@@ -54,6 +54,83 @@
       }
     }
   }
+  &__block{
+    &__flashsale{
+      &__header{
+        background: #ffd6ba;
+        padding: 10px;
+        color: #ff6600;
+        &__btnViewall{
+          background-color: #ff6600 !important;
+          border-color: #ff6600 !important;
+          color: #ffffff !important;
+          @extend .fz-13;
+          line-height: 30px;
+          border-radius: 3px;
+          padding: 0 10px;
+          text-transform: inherit;
+        }
+        &__countdown{
+          &__number{
+            line-height: 1.1;
+            text-align: center;
+            width: 30px;
+            padding: 3px 0;
+            display: inline-block;
+            border-radius: 3px;
+            color: #fff;
+            background: #ff6600;
+            @extend .fz-12;
+            font-family: $font-Roboto-Bold;
+          }
+          &__separator{
+            @extend .fz-18;
+          }
+        }
+        &__column{
+          &:not(.uk-first-column){
+            position: relative;
+            &:before{
+              content: "";
+              display: block;
+              width: 1px;
+              height: 24px;
+              background-color: #ff6600;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 10px;
+            }
+          }
+        }
+        &__txt{
+          @extend .fz-13;
+        }
+        &__title{
+          &:before{
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            width: 12px;
+            height: 25px;
+            display: block;
+            background-image: url("images/hsk/flash_deal_title_orange.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+          }
+          padding-left: 17px;
+          position: relative;
+          @extend .fz-18;
+          color: #ff6600;
+          text-transform: uppercase;
+          font-family: $font-Roboto-Bold;
+        }
+      }
+    }
+  }
 }
 .content_mobile{
   padding-top: 13px;

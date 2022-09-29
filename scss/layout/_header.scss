@@ -223,9 +223,11 @@
       }
     }
     &__boxSuggest{
+      max-height: 500px;
+      overflow: auto;
+      right: 0;
       $padding:10px;
       padding: #{$padding};
-      width: 100%;
       $x:10px;
       &__item{
         &:nth-child(n+2){

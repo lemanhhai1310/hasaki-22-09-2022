@@ -116,17 +116,17 @@
                                     </div>
                                     <div class="header__pc__boxSuggest__item">
                                         <div class="header__pc__boxSuggest__category">
-                                            <ul class="uk-grid-collapse uk-child-width-1-3" uk-grid>
+                                            <ul class="uk-grid-collapse uk-child-width-1-4" uk-grid>
                                                 <?php
                                                 $data = array(
-                                                    '',
-                                                    '',
-                                                    '',
-                                                    '',
-                                                    '',
-                                                    '',
-                                                    '',
-                                                    '',
+                                                    'images/hsk/1607579558laroche_img_150x75_766519_fit_center.jpeg',
+                                                    'images/hsk/1625112018rohto_img_150x75_766519_fit_center.jpeg',
+                                                    'images/hsk/1559009129vchy_img_150x75_766519_fit_center.jpeg',
+                                                    'images/hsk/1574937777senka-logo_img_150x75_766519_fit_center.jpeg',
+                                                    'images/hsk/1625111825eucerin_img_150x75_766519_fit_center.jpeg',
+                                                    'images/hsk/1593166962uni_img_150x75_766519_fit_center.jpeg',
+                                                    'images/hsk/1615522660bio_img_150x75_766519_fit_center.jpeg',
+                                                    'images/hsk/1625111472loreal_img_150x75_766519_fit_center.jpeg',
                                                 );
                                                 foreach ($data as $value): ?>
                                                     <li>

@@ -19,12 +19,12 @@ window.addEventListener("load", ()=>{
 });
 
 $(window).on("load", function (e) {
-    UIkit.util.on('.header__pc__boxLogin', 'show', function () {
+    UIkit.util.on('.header__pc__boxLogin,.header__pc__boxSuggest', 'show', function () {
         // do something
         $('.mask_menu').fadeIn(300);
     });
 
-    UIkit.util.on('.header__pc__boxLogin', 'hide', function () {
+    UIkit.util.on('.header__pc__boxLogin,.header__pc__boxSuggest', 'hide', function () {
         // do something
         $('.mask_menu').stop(true, true).fadeOut(300);
     });

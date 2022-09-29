@@ -113,6 +113,7 @@
 <!--Content PC-->
 <div class="uk-section-xsmall uk-visible@m">
     <div class="uk-container">
+        <!--Deals đang diễn ra-->
         <div class="uk-margin home__block__flashsale">
             <div class="home__block__flashsale__header">
                 <div class="uk-flex-middle" uk-grid>
@@ -169,6 +170,15 @@
 
             </div>
         </div>
+        <!--/Deals đang diễn ra-->
+
+        <!--DANH MỤC BẠN QUAN TÂM-->
+        <div class="uk-margin-top">
+
+        </div>
+        <!--/DANH MỤC BẠN QUAN TÂM-->
+
+
         <div class="uk-margin-top">
 
         </div>

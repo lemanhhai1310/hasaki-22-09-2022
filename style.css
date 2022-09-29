@@ -938,30 +938,30 @@ body {
   }
 }
 
-.fz-13, .content_mobile__category__txt, .home__block__flashsale__header__txt, .home__block__flashsale__header__btnViewall, .home__bannerpc__category__txt, .product__percent, .product__brand, .product__name, .product__percent_deal, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
+.fz-13, .content_mobile__category__txt, .home__block__flashsale__header__txt, .home__block__flashsale__header__btnViewall, .home__bannerpc__category__txt, .product__percent, .product__brand, .product__name, .product__percent_deal, .header__pc__boxSuggest__category__txt, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
   font-size: 13px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-13, .content_mobile__category__txt, .home__block__flashsale__header__txt, .home__block__flashsale__header__btnViewall, .home__bannerpc__category__txt, .product__percent, .product__brand, .product__name, .product__percent_deal, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
+  .fz-13, .content_mobile__category__txt, .home__block__flashsale__header__txt, .home__block__flashsale__header__btnViewall, .home__bannerpc__category__txt, .product__percent, .product__brand, .product__name, .product__percent_deal, .header__pc__boxSuggest__category__txt, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
     font-size: calc(13px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-13, .content_mobile__category__txt, .home__block__flashsale__header__txt, .home__block__flashsale__header__btnViewall, .home__bannerpc__category__txt, .product__percent, .product__brand, .product__name, .product__percent_deal, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
+  .fz-13, .content_mobile__category__txt, .home__block__flashsale__header__txt, .home__block__flashsale__header__btnViewall, .home__bannerpc__category__txt, .product__percent, .product__brand, .product__name, .product__percent_deal, .header__pc__boxSuggest__category__txt, .header__pc__cart span, .header__pc__txt, .header__pc__boxLogin__txt, .top_bar_hasaki .uk-navbar-nav > li > a, .modal__acc__input, .modal__acc__select, .modal__acc__btnOtp {
     font-size: 13px !important;
   }
 }
 
-.fz-14, .header__mobile__search .uk-search-input {
+.fz-14, .header__mobile__search .uk-search-input, .header__pc__boxSuggest__campain {
   font-size: 14px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-14, .header__mobile__search .uk-search-input {
+  .fz-14, .header__mobile__search .uk-search-input, .header__pc__boxSuggest__campain {
     font-size: calc(14px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-14, .header__mobile__search .uk-search-input {
+  .fz-14, .header__mobile__search .uk-search-input, .header__pc__boxSuggest__campain {
     font-size: 14px !important;
   }
 }
@@ -1363,6 +1363,48 @@ body {
 .header__pc__txtSearch > *:nth-child(n+2) {
   margin-left: 10px;
 }
+.header__pc__boxSuggest {
+  padding: 10px;
+  width: 100%;
+}
+.header__pc__boxSuggest__item:nth-child(n+2) {
+  margin-top: 10px;
+  padding-top: 10px;
+  position: relative;
+}
+.header__pc__boxSuggest__item:nth-child(n+2):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #eaeaea;
+  left: calc(0px - 10px);
+  right: calc(0px - 10px);
+  display: block;
+}
+.header__pc__boxSuggest__campain {
+  line-height: 28px;
+  display: block;
+  font-family: "Roboto Medium", sans-serif;
+  color: #333333;
+  text-decoration: none !important;
+}
+.header__pc__boxSuggest__campain:hover {
+  color: #326e51;
+}
+.header__pc__boxSuggest__category {
+  margin-left: calc(0px - 10px);
+  margin-right: calc(0px - 10px);
+}
+.header__pc__boxSuggest__category__item {
+  padding: 10px;
+}
+.header__pc__boxSuggest__category__txt {
+  color: #333333;
+  line-height: 1.1;
+}
+.header__pc__boxSuggest__category__item:hover .header__pc__boxSuggest__category__txt {
+  color: #326e51 !important;
+}
 .header__pc__boxSearch {
   margin-top: 10px;
 }
@@ -1547,6 +1589,9 @@ body {
   line-height: 16px;
   max-height: 16px;
   overflow: hidden;
+}
+.product__item:hover .product__name {
+  color: #326e51;
 }
 .product__brand {
   color: #326e51;

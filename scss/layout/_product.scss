@@ -100,6 +100,9 @@
     line-height: 16px;
     max-height: 16px;
     overflow: hidden;
+    .product__item:hover &{
+      color: #326e51;
+    }
   }
   &__brand{
     color: #326e51;

@@ -48,18 +48,98 @@
                                 <a class="uk-link-toggle" href="">Tẩy tế bào chết</a>
                                 <a class="uk-link-toggle" href="">Retinol</a>
                             </div>
-                            <form class="uk-grid-collapse header__pc__boxSearch" uk-grid>
-                                <div class="uk-width-expand">
-                                    <div class="uk-search uk-search-default header__pc__boxSearch__search">
-                                        <input id="search" class="header__pc__boxSearch__input uk-search-input" type="search" placeholder="Siêu Hội Hàng Tiêu Dùng">
+                            <div class="uk-inline">
+                                <form class="uk-grid-collapse header__pc__boxSearch" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <div class="uk-search uk-search-default header__pc__boxSearch__search">
+                                            <input id="search" class="header__pc__boxSearch__input uk-search-input" type="search" placeholder="Siêu Hội Hàng Tiêu Dùng">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <button type="submit" class="header__pc__boxSearch__btnSubmit uk-button uk-button-default" uk-icon="icon: search; ratio: 1">
+                                            <img class="uk-position-center" src="images/hsk/icon_search_48x48_white.png" alt="">
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="header__pc__boxSuggest" uk-dropdown="mode: click;offset: 5">
+                                    <div class="header__pc__boxSuggest__item">
+                                        <a href="" class="header__pc__boxSuggest__campain">Khai trương chi nhánh 76 HCM -TP.Thủ Đức</a>
+                                        <a href="" class="header__pc__boxSuggest__campain">HasakiDay. Thứ 4 cực bốc - Siêu Sale bung nóc</a>
+                                        <a href="" class="header__pc__boxSuggest__campain">Lương Về Sale Đậm 25.09 (áp dụng hết 30/09)</a>
+                                    </div>
+                                    <div class="header__pc__boxSuggest__item">
+                                        <div class="header__pc__boxSuggest__category">
+                                            <ul class="uk-grid-collapse uk-child-width-1-3" uk-grid>
+                                                <?php
+                                                $data = array(
+                                                    array(
+                                                        'img' => 'images/hsk/366_img_120x120_17b03c_fit_center.jpeg',
+                                                        'txt' => 'Dưỡng Sáng Da',
+                                                    ),
+                                                    array(
+                                                        'img' => 'images/hsk/trang-diem-vung-mat-50_img_120x120_17b03c_fit_center.jpeg',
+                                                        'txt' => 'Trang Điểm Mắt',
+                                                    ),
+                                                    array(
+                                                        'img' => 'images/hsk/van-de-ve-da_img_120x120_17b03c_fit_center.jpeg',
+                                                        'txt' => 'Giải Pháp Cho Tình Trạng Da',
+                                                    ),
+                                                    array(
+                                                        'img' => 'images/hsk/398_img_120x120_17b03c_fit_center.jpeg',
+                                                        'txt' => 'Điều Trị Sẹo Rỗ',
+                                                    ),
+                                                    array(
+                                                        'img' => 'images/hsk/13_1_img_120x120_17b03c_fit_center.jpeg',
+                                                        'txt' => 'Chống Nắng Toàn Thân',
+                                                    ),
+                                                    array(
+                                                        'img' => 'images/hsk/426_img_120x120_17b03c_fit_center.jpeg',
+                                                        'txt' => 'Tẩy Da Chết Toàn Thân (Body Scrub)',
+                                                    ),
+                                                );
+                                                foreach ($data as $value): ?>
+                                                    <li>
+                                                        <a href="" class="uk-padding-small uk-link-toggle header__pc__boxSuggest__category__item uk-display-block">
+                                                            <div class="uk-grid-5" uk-grid>
+                                                                <div class="uk-width-auto">
+                                                                    <img class="header__pc__boxSuggest__category__img" style="max-width: 50px" src="<?= $value['img'] ?>" alt="">
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <span class="header__pc__boxSuggest__category__txt"><?= $value['txt'] ?></span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="header__pc__boxSuggest__item">
+                                        <div class="header__pc__boxSuggest__category">
+                                            <ul class="uk-grid-collapse uk-child-width-1-3" uk-grid>
+                                                <?php
+                                                $data = array(
+                                                    '',
+                                                    '',
+                                                    '',
+                                                    '',
+                                                    '',
+                                                    '',
+                                                    '',
+                                                    '',
+                                                );
+                                                foreach ($data as $value): ?>
+                                                    <li>
+                                                        <a href="" class="uk-padding-small uk-link-toggle header__pc__boxSuggest__category__item uk-display-block">
+                                                            <img src="<?= $value ?>" alt="">
+                                                        </a>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-width-auto">
-                                    <button type="submit" class="header__pc__boxSearch__btnSubmit uk-button uk-button-default" uk-icon="icon: search; ratio: 1">
-                                        <img class="uk-position-center" src="images/hsk/icon_search_48x48_white.png" alt="">
-                                    </button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
